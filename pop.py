@@ -1,13 +1,16 @@
 #Re-coding python's pop() function :
 
 def pop(list, index = -1):
-  
+    
   removed = list[index]
+  if index < 0:
+        index += len(list)
+
   for num in range(index,len(list)-1):
     list[num] = list[num+1]
 
   list[:] = list[:-1]
-  print(f"Element {removed} has been popped!")
+  print(f"Element  '{removed}' has been popped!")
   print(f"Updated List:{list}")
   
 
