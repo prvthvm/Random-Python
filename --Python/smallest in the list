@@ -1,0 +1,15 @@
+def main():
+  array = list(map(int,input("Enter List: ").split()))
+  smallest(array)
+
+def smallest(my_list):
+
+  small = my_list[0]
+  
+  for num in my_list:
+    if num < small:
+      small = num
+  print(small)
+      
+
+main()
