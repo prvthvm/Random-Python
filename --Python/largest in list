@@ -1,0 +1,16 @@
+def main():
+  a = list(map(int,input("Enter List: ").split()))
+  large(a)
+
+
+def large(list):
+
+  largest = list[0]
+  
+  for num in list:
+    if num > largest:
+      largest = num
+
+  print("Largest number in this list: ",largest)
+
+main()
