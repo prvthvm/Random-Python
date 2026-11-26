@@ -1,0 +1,15 @@
+# Linear Search O(n)
+
+my_list = [10,20,55,40,97]
+
+def search(list,int):
+  for num in range(len(list)):
+    if list[num] == int:
+      print("Number is at Index: ",num)
+      return
+
+  print("not here")
+
+
+
+search(my_list,40)
